@@ -1,6 +1,8 @@
 const express = require('express');
 const routers = require('./routers');
 
+require('./configs/db').sync();
+
 const app = express();
 app.use('/public', express.static('./public'));
 app.use('/', routers);

@@ -1,8 +1,9 @@
-const db = require('./db');
+const user = require('../models/user');
 
 // login
 const login = (req, res) => {
   res.json('login');
+  console.log('aaaa');
 };
 
 const resetPassword = (req, res) => {
